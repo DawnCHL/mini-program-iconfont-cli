@@ -16,7 +16,7 @@ import {
 
 
 export const generateWechatComponent = (data: XmlData, config: Config) => {
-  const svgTemplates: string[] = [];
+  const svgTemplates: string[] = ['<slot></slot>'];
   const names: string[] = [];
   const saveDir = path.resolve(config.save_dir);
   const fileName = basename(config.save_dir) || 'iconfont';
